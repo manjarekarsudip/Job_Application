@@ -47,7 +47,7 @@ public class CompanyController {
 		if (deleted) {
 			return new ResponseEntity<String>("Company Deleted Successfully", HttpStatus.OK);
 		}
-		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		return new ResponseEntity<>("Company Not Found", HttpStatus.NOT_FOUND);
 	}
 	
 	@PutMapping("/{id}")
